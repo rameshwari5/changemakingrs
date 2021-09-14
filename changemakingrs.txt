@@ -1,0 +1,42 @@
+package changemaking;
+import java.util.Scanner;
+
+public class rschange {
+	public static void main (String[] args)
+	{
+		int rs1,rs2,rs5,rs10,rs20,rs50,amount,	originalAmount;
+		
+		System.out.println("Enter a whole number 1 to 100");
+		System.out.println("I will find a combination of coins  that equals of that amount of change ");
+	
+		
+		Scanner keyboard =new Scanner(System.in);
+		amount = keyboard.nextInt();
+		
+		originalAmount = amount;
+		rs50 = amount /50;
+		amount = amount %50;
+		rs20 = amount /20;
+		amount = amount %20;
+		rs10 =amount  /10;
+		amount = amount %10;
+		rs5 = amount/5;
+		amount = amount %5;
+		rs2=amount /2;
+		amount = amount %2;
+		rs1=amount;
+		
+		System.out.println(originalAmount+"change can be given as:");
+		System.out.println(rs50 +    "    note of 50");
+		System.out.println(rs20 +    "    note of 20");
+		System.out.println(rs10 +    "    note of 10");
+		System.out.println(rs5 +     "    coin of 5");
+		System.out.println(rs2 +     "    coin of 2");
+		System.out.println  (rs1 +   "    coin of 1");
+		
+		
+		
+		
+		
+	}
+}
